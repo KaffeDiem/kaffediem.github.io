@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is my very first blog post using Github!
+title: First post!
 ---
 
 # Here we have a big title
@@ -9,6 +9,7 @@ Then there is some text
 
 And something code block ish 
 
-´´´python
-for a in 
-´´´
+> test
+> again test
+
+`a = b = 0;`
