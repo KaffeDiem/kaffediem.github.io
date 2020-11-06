@@ -12,4 +12,4 @@ I am interested in game developement as it seemed like a good use of logic, art 
 
 
 ##### Contact me
-[mail](mailto:kaspermunchj@gmail.com)
+[Mail](mailto:kaspermunchj@gmail.com)
