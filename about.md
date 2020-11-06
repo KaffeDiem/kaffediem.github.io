@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-I am Kasper!
+My name is Kasper. 
 
-### More Information
+I study Computer Science.
 
-A place to include any other types of information that you'd like to include about yourself.
+I am interested in game developement as it seemed like a good use of logic, art and music. A world in which you can combine a multitude of different interests!
 
-### Contact me
 
-[kaspermunchj@gmail.com](mailto:email@domain.com)
+##### Contact me
+[mail](mailto:kaspermunchj@gmail.com)
