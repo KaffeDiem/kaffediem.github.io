@@ -18,8 +18,22 @@ a simple command.
 
 Download and install Homebrew from [brew.sh](https://brew.sh)
 
----
+### Installing applications with Homebrew
 
-### Installing applications trough Homebrew
+To install applications with a user interface (UI) with brew use 
 
+```
+$ brew cask install <application>
+```
 
+And to install CLI tools
+
+```
+$ brew install <cli tool>
+```
+
+It is also possible to search for applications with 
+
+```
+$ brew search <application>
+```
