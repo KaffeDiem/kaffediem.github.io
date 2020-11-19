@@ -1,15 +1,19 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Setup 
+permalink: /setup/
 ---
 
-My name is Kasper. 
+This page is designed to help me setting up my Mac OS whenever I do a clean
+install. Be free to use this information however you want. 
 
-I study Computer Science.
+### Applications
 
-I am interested in game developement as it seemed like a good use of logic, art and music. A world in which you can combine a multitude of different interests!
+Most applications can be installed trough *Homebrew* which is the package manager
+for Mac OS.
 
+Downloading and installing brew should be the first thing you do as you do
+a clean install or get a new pc. 
 
-##### Contact me
-[Mail](mailto:kaspermunchj@gmail.com)
+[Homebrew download](https://brew.sh/index_da)
+
