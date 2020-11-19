@@ -16,9 +16,9 @@ The only real choice for a package manager on Mac OS is *Homebrew*. Homebrew all
 you to install applications and command-line-interface (CLI) tools with
 a simple command. 
 
-Download and install Homebrew from below: 
+Download and install Homebrew from [brew.sh](https://brew.sh)
 
-[Go to brew.sh](https://brew.sh)
+---
 
 ### Installing applications trough Homebrew
 
