@@ -33,3 +33,22 @@ I am going to do the animations with [Anim8](https://github.com/kikito/anim8),
 which may seem like an overkill, but I want to learn it. I want to do OOP, and a very simple way to do this in Lua, which does not support it out of the box is with [Classic](https://github.com/rxi/classic). This simply allows for an abstraction of objects to be created within Lua. I want to create an object for the player and objects for the obstacles that the player should avoid. The obstacle objects are therefore easy to delete afterwards, once they have done their duty. 
 
 The last library which I will be using is [Windfield](https://github.com/SSYGEN/windfield). Windfield is a wrapper for Box2D, which is quite an advanced physics engine and most defiantly too much in this project, however I want to get used to it. 
+
+### Getting started
+
+So now to the actual coding. We import the modules and write the three main functions of any Löve2D project. 
+
+´´´lua
+wf = require "windfield"
+anim8 = require "anim8"
+object = require "classic"
+
+function love.load()
+end
+
+function love.update(dt)
+end
+
+function love.draw()
+end
+´´´
