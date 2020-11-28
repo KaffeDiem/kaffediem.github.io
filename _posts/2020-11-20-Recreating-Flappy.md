@@ -38,7 +38,7 @@ The last library which I will be using is [Windfield](https://github.com/SSYGEN/
 
 So now to the actual coding. We import the modules and write the three main functions of any Löve2D project. 
 
-´´´lua
+```lua
 wf = require "windfield"
 anim8 = require "anim8"
 object = require "classic"
@@ -51,4 +51,4 @@ end
 
 function love.draw()
 end
-´´´
+```
