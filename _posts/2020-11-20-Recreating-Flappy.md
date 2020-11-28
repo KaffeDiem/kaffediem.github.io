@@ -25,3 +25,12 @@ below.
   two obstacles occur shortly after each other?
 * How is the state system going to be implemented, and do I want to go trough
   the struggle of implementing a menu?
+
+
+### Tools to be used
+
+I am going to do the animations with [Anim8](https://github.com/kikito/anim8),
+which may seem like an overkill, but I want to learn it. 
+
+I want to do OOP, and a very simple way to do this in Lua, which does not
+support it out of the box is with 
