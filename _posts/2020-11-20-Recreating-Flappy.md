@@ -37,7 +37,6 @@ The last library which I will be using is [Windfield](https://github.com/SSYGEN/
 ### Getting started
 
 So now to the actual coding. We import the modules and write the three main functions of any Löve2D project. 
-
 ```lua
 wf = require "windfield"
 anim8 = require "anim8"
@@ -52,3 +51,10 @@ end
 function love.draw()
 end
 ```
+Then we will be creating two new *classes* with the Classic module. This is done before anything else, as we are just telling our program that these are going to be classes. This is done with 
+```lua
+Player = Object:extend()
+Obstacle = Object:extend()
+```
+Next up is implementing a basic player. I already draw an owl for this purpose. It is going to be animated, and there are 3 pictures in total, this is one of them.
+![Owl](/images/2020-FlappyBird/owl_1.png)
