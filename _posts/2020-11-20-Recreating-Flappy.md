@@ -73,14 +73,23 @@ The player is going to be initialised with `p = Player()` in the `love.load` fun
 ```lua
 -- Initial loading of player
 function Player:new()
-   self.x = 0.1 * sw
-   self.y = 0.4 * sh
-   self.w = 0.05 * sw
-   self.h = 0.1 * sh
-   self.speed = 20
-   self.jump = 20
-   self.image = love.graphics.newImage("sprites/owl_1.png")
-   self.box = world:newCircleCollider(self.x, self.y, 0.05*sw)
+  self.x = 0.1 * sw
+  self.y = 0.4 * sh
+  self.w = 0.05 * sw
+  self.h = 0.1 * sh
+  self.speed = 20
+  self.jump = 20
+  self.image = love.graphics.newImage("sprites/owl_1.png")
+  self.box = world:newCircleCollider(self.x, self.y, 0.05*sw)
 end
 ```
-The first thing you may ask is; why do we use `0.1 * sw` for the positions? This is because we want to support all desktop dimensions. It means `10% into the screen from the left side` when `sw` is the screen width and `40%` down from the top of the screen on the y-axis. 
+The first thing you may ask is; why do we use `0.1 * sw` for the positions? This is because we want to support all desktop dimensions. It means `10%` into the screen from the left side` when `sw` is the screen width and `40%` down from the top of the screen on the y-axis. 
+
+We also need to make the player move. This requires some gravity and is going to be handled with the *Windfield* module that was imported in the beginning. We create a player object and a Windfield world in the `love.load()` function. 
+
+```lua
+-- Create a Windfield world, second parameter is
+-- gravity in the y axis direction
+world = wf.newWorld(0, 2048, true)
+p = Player() -- Create player object
+```
