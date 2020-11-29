@@ -56,5 +56,26 @@ Then we will be creating two new *classes* with the Classic module. This is done
 Player = Object:extend()
 Obstacle = Object:extend()
 ```
-Next up is implementing a basic player. I already draw an owl for this purpose. It is going to be animated, and there are 3 pictures in total, this is one of them.
+That is all for setting up the barebones structure. 
+
+### Making a controllable player
+
+Next up is implementing a basic player. I already drew an owl for this purpose. It is going to be animated, and there are 3 pictures in total, this is one of them.
 ![Owl](/images/2020-FlappyBird/owl_1.png)
+It is simply a 32x32 picture that I drew in a few minutes. The goal is to have the three pictures in total run as an animation during one second, but we will be waiting with the animation till later.
+
+The player is going to be initialised with `p = Player()` in the `love.load` function. To initialise a player it is also necessary to create some constructor for it. For now, this is going to be the constructor for my player. 
+```lua
+-- Initial loading of player
+function Player:new()
+   self.x = 0.1 * sw
+   self.y = 0.4 * sh
+   self.w = 0.05 * sw
+   self.h = 0.1 * sh
+   self.speed = 20
+   self.jump = 20
+   self.image = love.graphics.newImage("sprites/owl_1.png")
+   self.box = world:newCircleCollider(self.x, self.y, 0.05*sw)
+end
+```
+The first thing you may ask is; why do we use `0.1 * sw` for the positions? This is because we want to support all desktop dimensions. It means `10% into the screen from the left side` when `sw` is the screen width and `40%` down from the top of the screen on the y-axis. 
