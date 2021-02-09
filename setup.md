@@ -4,9 +4,8 @@ title: Setup
 permalink: /setup/
 ---
 
-This page is made for my own reference on setting up a clean install of Mac OS.
-
-Use this information however you would like. 
+This page is for *personal reference* and includes applications that I would
+install on a new machine.
 
 ---
 
@@ -37,3 +36,22 @@ It is also possible to search for applications with
 ```
 $ brew search <application>
 ```
+
+Dump of some of the applications that I use for easy install. A mix of GUI
+applications and nice-to-haves like *tree* and *htop*.
+
+```
+$ brew install chromium discord cyberduck iterm2 logitech-options spotify
+neofetch neovim typora tree visual-studio-code vlc htop
+```
+
+Also to install *lua* and *Löve2D*
+
+```
+$ brew install lua love
+```
+
+### Setting up Visual Studio Code
+
+*Not really necessary anymore, as they allowed for settings to be synced
+online*
