@@ -86,4 +86,5 @@ exclude:
   - CNAME
 
 #theme: jekyll-theme-minimal
-theme: jekyll-theme-chirpy
+# theme: jekyll-theme-chirpy
+theme: jekyll-theme-hacker
