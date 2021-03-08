@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Snippets 
-permalink: /snippets/
+title: Projects 
+permalink: /projects/
 ---
 
-Short solutions to discrete problems that I face often.
-
+Projects that I have been doing in my freetime.
 
