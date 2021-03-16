@@ -11,4 +11,4 @@ A simple 2 player game written in Lua with Löve2D.
 
 Previews coming soon.
 
-[Link to doink releases](https://github.com/KaffeDiem/Doink/releases "Download") for Mac and Windows on Github.
+[Download](https://github.com/KaffeDiem/Doink/releases "Go to Github releases") for Mac and Windows on Github.
