@@ -9,6 +9,6 @@ permalink: /projects/
 Push your friend off a platform on the same keyboard.
 A simple 2 player game written in Lua with Löve2D.
 
-preview gifs coming soon. 
+Previews coming soon.
 
-Download: coming soon
+[Link to doink releases](https://github.com/KaffeDiem/Doink/releases "Download") for Mac and Windows on Github.
