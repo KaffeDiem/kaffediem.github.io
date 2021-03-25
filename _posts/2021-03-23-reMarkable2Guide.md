@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Remarkable 2 thoughts on software and some modifications
+title: Remarkable 2 guide, software modifications 
 ---
+
+(This guide is written with Mac users in mind, if you use something else be
+aware)
 
 A few modifications to the reMarkable 2 makes it way more pleasant to use. Notice that if you
 do install these mods or change the lockscreen wallpaper, they will dissapear after a software
