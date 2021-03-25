@@ -87,7 +87,7 @@ enter. You should now be asked for your password. This can be found in above
 guide as well. After succesfully connecting to your reMarkable you should be
 met by the following screen:
 
-![alt text][01]
+![alt text][11]
 
 Then copy and paste this *automagic* line. It downloads and patches the binary
 files on the reMarkable with the modded ones.
@@ -96,26 +96,26 @@ files on the reMarkable with the modded ones.
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)"
 ```
 
-![alt text][02]
+![alt text][12]
 
 After pressing enter you should be met by this screen, and the reMarkable
 should restart.
 
-![alt text][03]
+![alt text][13]
 
 You can now play around with the mods. Hold down `CTRL` and press `c` to either
 abort or install them. To install the mods press `y` and then `enter` to make
 them permanent (at least till you update the device, thus it is recommended
 that you disable automatic updates).
 
-![alt text][04]
+![alt text][14]
 
 [1]: /images/2021-remarkable2/8.jpeg "reMarkable 2 with a custom wallpaper"
 [2]: /images/2021-remarkable2/7.jpeg "reMarkable 2 SSH access"
 [3]: /images/2021-remarkable2/2.png "Cyberduck screenshot"
 [4]: /images/2021-remarkable2/3.png "Cyberduck navigation"
 [5]: /images/2021-remarkable2/5.png "Cyberduck navigation"
-[01]: /images/2021-remarkable2/01.png "Terminal"
-[02]: /images/2021-remarkable2/02.png "Terminal"
-[03]: /images/2021-remarkable2/03.png "Terminal"
-[04]: /images/2021-remarkable2/04.png "Terminal"
+[11]: /images/2021-remarkable2/01.png "Terminal"
+[12]: /images/2021-remarkable2/02.png "Terminal"
+[13]: /images/2021-remarkable2/03.png "Terminal"
+[14]: /images/2021-remarkable2/04.png "Terminal"
