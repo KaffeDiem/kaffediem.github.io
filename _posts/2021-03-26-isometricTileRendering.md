@@ -41,7 +41,7 @@ water = {
 ```
 
 Below example demonstrates three tiles of wood cutting trough the water as
-well. We see the number 3 in the table representing the third images on the 
+well. We see the number 3 in the table representing the third image in the 
 spritesheet.
 
 ```lua
@@ -64,10 +64,34 @@ such that it is stored in the RAM.
 
 ```lua
 function love.load()
-  tiles = {} -- Will be a table holding our tiles / quads
   tilesheet = love.grahpics.newImage('path_to_tilesheet') -- Load the image
+  tiles = fromImageToQuads(tilesheet, 32, 32)
+end
+
+function fromImageToQuads(tilesheet, tileWidth, tileHeight)
+  local tiles = {} -- A table containing the quads to return
+  local imageWidth = tilesheet:getWidth()
+  local imageHeight = tilesheet:getHeight()
+  -- Loop trough the image and extract the quads
+  for j = 0, imageHeight - 1, self.tileHeight do
+    for j = 0, imageWidth - 1, self.tileWidth do
+      table.insert(
+        tiles,
+        love.graphics.newQuad(
+          i, j, tileWidth, tileHeight, imageWidth, imageHeight
+        )
+      )
+    end
+  end
+  -- Return the table of quads
+  return tiles
 end
 ```
+
+Above function will create a table containing all the quads to draw later.
+If we index the table `tilesheet[1]` then it will be the quad containing
+the water tile. This allows us to render the tiles to the screen with
+
 
 [tileset]: /images/2021-isometric/tilesheet.png "Tileset"
 [water]: /images/2021-isometric/water_with_bridge.png "Water bridge"
