@@ -3,8 +3,7 @@ layout: post
 title: Rendering tile-based isometric maps in LÖVE2D
 ---
 
-[![YouTube preview of a tile-based isometric map](/images/2021-isometric/youtube_preview.png)]
-(https://www.youtube.com/watch?v=3yU7wD8ITaw)
+[![YouTube preview of a tile-based isometric map](/images/2021-isometric/youtube_preview.png)](https://www.youtube.com/watch?v=3yU7wD8ITaw)
 
 There is not a whole lot of information out there on rendering tile-based
 isometric maps in general, and even less so in LÖVE2D, thus I decided to write
@@ -59,11 +58,15 @@ Thus, our goal is to render below image from the above table as input.
 
 ### Loading the image and extracting the quads 
 
+One thing worth noticing is that you should not load the image or the quads
+more than once, thus we make sure that all the loading is done in love.load()
+such that it is stored in the RAM.
+
 ```lua
-
-tilesheet = love.grahpics.newImage('path_to_tilesheet')
-
-
+function love.load()
+  tiles = {} -- Will be a table holding our tiles / quads
+  tilesheet = love.grahpics.newImage('path_to_tilesheet') -- Load the image
+end
 ```
 
 [tileset]: /images/2021-isometric/tilesheet.png "Tileset"
