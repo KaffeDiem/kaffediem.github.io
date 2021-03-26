@@ -14,7 +14,7 @@ other frameworks and engines as well.
 First and foremost we must define the expected input and outout to measure some
 critera for success.
 
-### Defining the input
+### Defining the input and expected output
 
 The input should be some table defining a map. Let us say that we have got
 below tileset which is a spritesheet containing 4 images.
@@ -38,7 +38,8 @@ water = {
 ```
 
 Below example demonstrates three tiles of wood cutting trough the water as
-well.
+well. We see the number 3 in the table representing the third images on the 
+spritesheet.
 
 ```lua
 waterAndWood = {
@@ -48,11 +49,11 @@ waterAndWood = {
 }
 ```
 
-The goal is then to generate below result from above input.
+Thus, our goal is to render below image from the above table as input.
 
 ![Water with wood cutting trough][water]
 
-### Loading the quads 
+### Loading the image and extracting the quads 
 
 [tileset]: /images/2021-isometric/tilesheet.png "Tileset"
 [water]: /images/2021-isometric/water_with_bridge.png "Water bridge"
