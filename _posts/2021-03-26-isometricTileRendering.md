@@ -3,16 +3,20 @@ layout: post
 title: Rendering tile-based isometric maps in LÖVE2D
 ---
 
+[![YouTube preview of a tile-based isometric map](/images/2021-isometric/youtube_preview.png)]
+(https://www.youtube.com/watch?v=3yU7wD8ITaw)
+
 There is not a whole lot of information out there on rendering tile-based
 isometric maps in general, and even less so in LÖVE2D, thus I decided to write
-a small article on the subject.
+a small article on the subject. Also, above video should give you a good idea
+of what I mean by tile-based and isometric. 
 
 This guide assumes that the reader is known with the [LÖVE2D](https://love2d.org)
 game engine as well as Lua. I will try to keep it as general as possible for
 other frameworks and engines as well. 
 
 First and foremost we must define the expected input and outout to measure some
-critera for success.
+critera for success. 
 
 ### Defining the input and expected output
 
@@ -54,6 +58,13 @@ Thus, our goal is to render below image from the above table as input.
 ![Water with wood cutting trough][water]
 
 ### Loading the image and extracting the quads 
+
+```lua
+
+tilesheet = love.grahpics.newImage('path_to_tilesheet')
+
+
+```
 
 [tileset]: /images/2021-isometric/tilesheet.png "Tileset"
 [water]: /images/2021-isometric/water_with_bridge.png "Water bridge"
