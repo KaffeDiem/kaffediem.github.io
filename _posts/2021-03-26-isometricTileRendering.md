@@ -19,7 +19,7 @@ critera for success.
 The input should be some table defining a map. Let us say that we have got
 below tileset which is a spritesheet containing 4 images.
 
-![Tileset as a spritesheet][1]
+![Tileset as a spritesheet][tileset]
 
 In our code we will be loading this image once and then extract the 4 tiles,
 which we will be rendering on the screen.
@@ -50,9 +50,9 @@ waterAndWood = {
 
 The goal is then to generate below result from above input.
 
-![Water with wood cutting trough][2]
+![Water with wood cutting trough][water]
 
 ### Loading the quads 
 
-[1]: images/2021-isometric/tilesheet.png "Tileset"
-[2]: images/2021-isometric/water_with_bridge.png "Water bridge"
+[tileset]: /images/2021-isometric/tilesheet.png "Tileset"
+[water]: /images/2021-isometric/water_with_bridge.png "Water bridge"
