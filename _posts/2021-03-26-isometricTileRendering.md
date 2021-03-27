@@ -11,8 +11,8 @@ a small article on the subject. Also, above video should give you a good idea
 of what I mean by tile-based and isometric. 
 
 This guide assumes that the reader is known with the [LÖVE2D](https://love2d.org)
-game engine as well as Lua. I will try to keep it as general as possible for
-other frameworks and engines as well. 
+framework as well as Lua. I will try to keep it as general as possible for
+other frameworks and game engines as well. 
 
 ### Defining input and expected output
 
