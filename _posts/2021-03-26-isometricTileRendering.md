@@ -14,23 +14,15 @@ This guide assumes that the reader is known with the [LÖVE2D](https://love2d.or
 game engine as well as Lua. I will try to keep it as general as possible for
 other frameworks and engines as well. 
 
-First and foremost we must define the expected input and outout to measure some
-critera for success. 
+### Defining input and expected output
 
-### Defining the input and expected output
-
-The input should be some table defining a map. Let us say that we have got
-below tileset which is a spritesheet containing 4 images.
+Let us say that we have got below tileset which is layed out as a spritesheet 
+containing 4 images.
 
 ![Tileset as a spritesheet][tileset]
 
-In our code we will be loading this image once and then extract the 4 tiles,
-which we will be rendering on the screen.
-
-Next up is to define some way that the map should be layed out. Lets say that
-we want a map only containing water in the dimensions `3x3`. The input should
-then be a table containing the indexes of the tile which we want to draw. As
-water is the first tile, the table is filled with ones. 
+In our code we will be loading this spritesheet once and then extract the 4 tiles,
+which we will be rendering one by one on the screen.
 
 ```lua
 water = {
@@ -40,9 +32,10 @@ water = {
 }
 ```
 
-Below example demonstrates three tiles of wood cutting trough the water as
-well. We see the number 3 in the table representing the third image in the 
-spritesheet.
+Next up is to define some input that defines the map. Lets say that
+we want a map only containing water in the dimensions `3x3`. The input should
+then be a table containing the indexes of the tile which we want to draw. As
+water is the first tile, the table is filled with ones. 
 
 ```lua
 waterAndWood = {
@@ -52,14 +45,18 @@ waterAndWood = {
 }
 ```
 
+Here is a demonstration of three tiles of wood cutting trough the water as
+well. We see the number 3 in the table representing the third image in the 
+spritesheet.
+
 Thus, our goal is to render below image from the above table as input.
 
 ![Water with wood cutting trough][water]
 
 ### Loading the tilesheet and extracting the quads 
 
-One thing worth noticing is that you should not load the image or the quads
-more than once, thus we make sure that all the loading is done in love.load()
+One thing worth noticing is that you should not load the spritesheet or the quads
+more than once, therefore we make sure that all the loading is done in love.load()
 such that it is stored in the RAM.
 
 ```lua
@@ -98,9 +95,10 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
 end
 ```
 
-Above function will create a table containing all the quads to draw later.
-If we index the table `tilesheet[1]` then it will be the quad containing
-the water tile and `tilesheet[3]` will contain the tree tile. 
+The `fromImageToQuads()` function will create a table containing all the 
+quads to draw later.
+If we index the table `tiles[1]` then it will be the quad representing 
+the water tile and `tiles[3]` will contain the tree tile. 
 
 ### Rendering the map
 
@@ -114,24 +112,25 @@ rendered from the top middle towards the right.
 
 ![Isometric tiles as images][illustration2]
 
-Even though tiles are isometric the image is still just a square and its
-x and y coordinates are drawn from the top left corner. When rendering we will
-have to increase the x coordinate as well as the y coordinate.
+Even though tiles are isometric the quad is still just a square where its
+x- and y-coordinates are drawn from the top left corner. When rendering we will
+have to increase the x-coordinate as well as the y-coordinate. In a regular
+tile-based approach you would not increase the y-coordinate before moving
+on to rendering a new row, however you do that in isometric rendering.
 
 ![Isometric rendering as squares][illustration3]
 
-Above figure shows how we continually increases the x and y coordinates.
+Above figure shows how we continually increases the x- and y-coordinates.
 x is increased by half a tile and y is increased by a quarter of a tile.
 
-When we also subtract half a tile from the x coordinate.
-
-Putting all this increase and decrease together we have that:
+When you move on to rendering a new row, half a tile is also subtracted
+from the x-coordinate. 
 
 ```lua
 function love.draw()
   for i = 1, #map do -- Loop trough rows
     for j = 1, #map[i] do -- Loop through cols in the rows
-      if self.map[i][j] ~= 0 then -- If there is a tile to draw
+      if map[i][j] ~= 0 then -- If there is a tile to draw
 
         local x =
           mapX -- Starting point
@@ -153,7 +152,13 @@ function love.draw()
 end
 ```
 
-And putting it all together we have now code the following code ready to run!
+We have the outer loop increasing rows and inner loop increasing coloumns.
+Whenever a new row is being rendered half a tile is being subtracted from
+the x-coordinate. Whenever a new coloumn is rendered a quarter of a tile
+is being subtracted from the y-coordinate.
+
+Below code should be ready to run, given some path to a tilesheet. 
+Use it however you want:
 
 ```lua
 function love.load()
@@ -176,8 +181,8 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
   local imageWidth = tilesheet:getWidth()
   local imageHeight = tilesheet:getHeight()
   -- Loop trough the image and extract the quads
-  for j = 0, imageHeight - 1, self.tileHeight do
-    for j = 0, imageWidth - 1, self.tileWidth do
+  for j = 0, imageHeight - 1, tileHeight do
+    for j = 0, imageWidth - 1, tileWidth do
       table.insert(
         tiles,
         love.graphics.newQuad(
@@ -190,10 +195,11 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
   return tiles
 end
 
+
 function love.draw()
   for i = 1, #map do -- Loop trough rows
     for j = 1, #map[i] do -- Loop through cols in the rows
-      if self.map[i][j] ~= 0 then -- If there is a tile to draw
+      if map[i][j] ~= 0 then -- If there is a tile to draw
 
         local x =
           mapX -- Starting point
@@ -214,6 +220,9 @@ function love.draw()
   end
 end
 ```
+
+[Buy me a coffee](https://buymeacoffee.com/busiju)
+
 
 [tileset]: /images/2021-isometric/tilesheet.png "Tileset"
 [water]: /images/2021-isometric/water_with_bridge.png "Water bridge"
