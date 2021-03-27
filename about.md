@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Info about me is supposed to be here.
+My name is Kasper and I study Computer Science. 
 
 [Buy me a coffee](https://buymeacoffee.com/busiju)
+
+BTC: 1DFud5TtPSPg5BDTdtUfdbdnNjDa3SYZay
+ETH: 0x9Fbf39A716B4448E177Fa401427f01F0785Ac97e
