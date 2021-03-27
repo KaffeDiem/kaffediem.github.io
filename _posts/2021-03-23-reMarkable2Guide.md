@@ -67,6 +67,28 @@ drop your new lockscreen image into the folder. Rename your lockscreen image to
 image of the size *1404x1872*. This is the native resolution of the reMarkable
 2.
 
+##### Method 2: Using a magic one-liner
+
+From the terminal it is also possible to transfer a file directly to the
+reMarkable. You can use the below magic one-liner to transfer said file.
+
+```shell
+scp "path-to-local-file" root@192.168.X.XX:/usr/share/remarkable/suspended.png
+```
+
+Above template will have to be filled out with a path to your image. Below is
+an example of me transfering an image, which I placed on the desktop, called
+`lockscreen.png`. The IP address can be found be following the beginning of
+`Method 1` (or by going to `Settings -> Help -> Copyrights and licenses`) 
+
+```shell
+scp ~/Desktop/lockscreen.png root@192.168.0.46:/usr/share/remarkable/suspended.png
+```
+
+You will be prompted for the SSH password. Enter the password and press Enter.
+Notice that by using this method the *original lockscreen image will be
+replaced*.
+
 # Installing ddvk mods
 
 The ddvk mods adds a loft of improvements to the original software. It allows
