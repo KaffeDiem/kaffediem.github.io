@@ -6,7 +6,7 @@ permalink: /about/
 
 My name is Kasper and I study Computer Science. 
 
-[![Buy me a coffee](/images/buymeacoffee.gif)](https://buymeacoffee.com/busiju)
+[![Buy me a coffee](/images/buymeacoffee.gif | width=100)](https://buymeacoffee.com/busiju)
 
 BTC: 1DFud5TtPSPg5BDTdtUfdbdnNjDa3SYZay
 
