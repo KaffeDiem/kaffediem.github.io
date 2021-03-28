@@ -80,7 +80,7 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
   local imageWidth = tilesheet:getWidth()
   local imageHeight = tilesheet:getHeight()
   -- Loop trough the image and extract the quads
-  for j = 0, imageHeight - 1, self.tileHeight do
+  for i = 0, imageHeight - 1, self.tileHeight do
     for j = 0, imageWidth - 1, self.tileWidth do
       table.insert(
         tiles,
@@ -181,7 +181,7 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
   local imageWidth = tilesheet:getWidth()
   local imageHeight = tilesheet:getHeight()
   -- Loop trough the image and extract the quads
-  for j = 0, imageHeight - 1, tileHeight do
+  for i = 0, imageHeight - 1, tileHeight do
     for j = 0, imageWidth - 1, tileWidth do
       table.insert(
         tiles,
