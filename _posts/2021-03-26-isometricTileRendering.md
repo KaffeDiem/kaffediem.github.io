@@ -80,8 +80,8 @@ function fromImageToQuads(tilesheet, tileWidth, tileHeight)
   local imageWidth = tilesheet:getWidth()
   local imageHeight = tilesheet:getHeight()
   -- Loop trough the image and extract the quads
-  for i = 0, imageHeight - 1, self.tileHeight do
-    for j = 0, imageWidth - 1, self.tileWidth do
+  for i = 0, imageHeight - 1, tileHeight do
+    for j = 0, imageWidth - 1, tileWidth do
       table.insert(
         tiles,
         love.graphics.newQuad(
