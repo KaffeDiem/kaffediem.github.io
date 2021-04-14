@@ -208,7 +208,7 @@ function love.draw()
         local y =
           mapY
           + (i * (tileHeight / 4)) -- The height on rows
-          - (j * (tileHeight / 4)) -- The width on cols
+          + (j * (tileHeight / 4)) -- The width on cols
         -- Draw the tiles
         love.graphics.draw(
           tilesheet, 
