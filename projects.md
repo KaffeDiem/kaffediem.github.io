@@ -6,13 +6,18 @@ permalink: /projects/
 
 ### Save the princess, IN SPACE
 *Work in progress*
+
 An endless tower defence game with randomly generated maps. The goal is save
-princess Viola from the evil monsters coming for her.
+princess Viola from the evil monsters coming for her. It runs on all platforms
+as well as mobile operating systems.
+well.
 
 ![GIF showing a preview](/images/save_the_princess.gif "Save the princess, IN
 SPACE")
 
 Not yet ready for release but source code and more info can be found [here on github](https://github.com/KaffeDiem/TowerDefence)
+
+Made with the Löve2D framework.
 
 ---
 
