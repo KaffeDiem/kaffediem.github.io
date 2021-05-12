@@ -7,10 +7,9 @@ permalink: /projects/
 ### Save the princess, IN SPACE
 *Work in progress*
 
-An endless tower defence game with randomly generated maps. The goal is save
+An endless tower defence game with randomly generated maps and waves. The goal is save
 princess Viola from the evil monsters coming for her. It runs on all platforms
 as well as mobile operating systems.
-well.
 
 ![GIF showing a preview](/images/save_the_princess.gif "Save the princess, IN
 SPACE")
