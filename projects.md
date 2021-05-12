@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 ### Save the princess, IN SPACE
-*Work in progress*
+*Work in progress*, but you can follow the progress [here](https://github.com/KaffeDiem/TowerDefence/projects/1)
 
 An endless tower defence game with randomly generated maps and waves. The goal is save
 princess Viola from the evil monsters coming for her. It runs on all platforms
