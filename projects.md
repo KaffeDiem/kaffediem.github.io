@@ -12,7 +12,7 @@ princess Viola from the evil monsters coming for her.
 ![GIF showing a preview](images/save_the_princess.gif "Save the princess, IN
 SPACE")
 
-Not yet ready for release but source code can be seen [here on github](https://github.com/KaffeDiem/TowerDefence)
+Not yet ready for release but source code and more info can be found [here on github](https://github.com/KaffeDiem/TowerDefence)
 
 ---
 
