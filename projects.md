@@ -5,6 +5,7 @@ permalink: /projects/
 ---
 
 ### dIM Chat
+##### Send offline messages
 
 ![dIM Icon](/dim/icon.png "dIM icon")
 
@@ -16,17 +17,18 @@ The content of messages is encrypted to hide from surveying eyes.
 ---
 
 ### Save the princess, IN SPACE
-*Work in progress*, but you can follow the progress [here](https://github.com/KaffeDiem/TowerDefence/projects/1)
-
-An endless tower defence game with randomly generated maps and waves. The goal is save
-princess Viola from the evil monsters coming for her. It runs on all platforms
-as well as mobile operating systems.
+##### A small tower defence game in Lua
 
 ![GIF showing a preview](/images/save_the_princess.gif "Save the princess, IN SPACE")
 
-Not yet ready for release but source code and more info can be found [here on github](https://github.com/KaffeDiem/TowerDefence)
+An endless tower defence game with randomly generated maps and waves of enemies. The goal is save
+princess Viola from the evil monsters coming for her. It runs on all platforms
+as well as mobile operating systems.
 
 Made with the Löve2D framework.
+
+Not yet ready for release but source code and more info can be found [here on github](https://github.com/KaffeDiem/TowerDefence)
+
 
 ---
 
