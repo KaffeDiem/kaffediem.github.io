@@ -10,9 +10,9 @@ permalink: /projects/
 ![dIM Icon](/dim/icon.png "dIM icon")
 
 dIM is a decentralised instant messenger. It sends messages with Bluetooth to your contacts over a peer to peer network.
-The content of messages is encrypted to hide from surveying eyes. 
+The content of messages is encrypted such that only the sender and receiver can access the content. 
 
-[More](https://www.kaspermunch.xyz/dim.hmtl "Read more")
+[More](https://www.dimchat.org "Go to dimchat.org")
 
 ---
 
