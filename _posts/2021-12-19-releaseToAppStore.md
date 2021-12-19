@@ -1,9 +1,9 @@
 ---
 layout: post
-title: dIM on the App Store! 
+title: dIM Chat on the App Store! 
 ---
 
-![dIM](https://dimchat.org) has finally gotten trough the App Review process
+![dIM Chat](https://dimchat.org) has finally gotten trough the App Review process
 and can now be found in the App Store for iOS ![here](https://apps.apple.com/dk/app/dim-chat/id1583606879).
 
 ![dIM Icon](/dim/icon.png "dIM icon")
