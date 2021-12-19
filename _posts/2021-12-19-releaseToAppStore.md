@@ -3,8 +3,8 @@ layout: post
 title: dIM Chat on the App Store! 
 ---
 
-![dIM Chat](https://dimchat.org) has finally gotten trough the App Review process
-and can now be found in the App Store for iOS ![here](https://apps.apple.com/dk/app/dim-chat/id1583606879).
+[dIM Chat](https://dimchat.org) has finally gotten trough the App Review process
+and can now be found in the App Store for iOS [here](https://apps.apple.com/dk/app/dim-chat/id1583606879).
 
 ![dIM Icon](/dim/icon.png "dIM icon")
 
@@ -20,6 +20,6 @@ Bluetooth Low Energy is officially 100m (33ft), but according to my tests the
 range is more like 80m (26ft).
 
 ### Read more
-See ![dIM chat](https://dimchat.org) for more information, the *source code*
+See [dIM chat](https://dimchat.org) for more information, the *source code*
 and *documentation* of the project. 
 
