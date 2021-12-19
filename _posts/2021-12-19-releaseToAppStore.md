@@ -16,8 +16,8 @@ which is what makes it special.
 ### How it works
 When you are in the range of another person who has dIM installed on their
 iPhone messages are relayed until they reach their destination. The range of
-Bluetooth Low Energy is officially 100m (33ft), but according to my tests the
-range is more like 80m (26ft).
+Bluetooth Low Energy is officially 100m (330ft), but according to my tests the
+range is more like 80m (260ft).
 
 ### Read more
 See [dIM chat](https://dimchat.org) for more information, the *source code*
