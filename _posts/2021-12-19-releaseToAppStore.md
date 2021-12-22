@@ -23,3 +23,6 @@ range is more like 80m (260ft).
 See [dIM chat](https://dimchat.org) for more information, the *source code*
 and *documentation* of the project. 
 
+![alt text][1]
+
+[1]: images/dim_basic_chat.png" "dIM open Chat window"
