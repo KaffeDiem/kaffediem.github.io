@@ -25,4 +25,4 @@ and *documentation* of the project.
 
 ![alt text][1]
 
-[1]: images/dim_basic_chat.png" "dIM open Chat window"
+[1]: /images/dim_basic_chat.png" "dIM open Chat window"
