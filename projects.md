@@ -18,7 +18,8 @@ The content of messages is encrypted such that only the sender and receiver can 
 
 ---
 
-### Draw Beat Maker - 2022 WWDC Winner
+### Draw Beat Maker
+##### WWDC 2022 Student Challenge Winner
 
 ![draw](/images/2022-wwdc/draw.PNG)
 
